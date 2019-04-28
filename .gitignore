@@ -1,0 +1,8 @@
+# Vendor
+node_modules
+
+# Visual Studio
+.vscode
+
+# macOS
+.DS_Store
