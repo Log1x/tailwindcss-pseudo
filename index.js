@@ -13,10 +13,45 @@ module.exports = function(options = {}) {
       'after': 'after',
     };
 
+    const psuedoElements = [
+      '-moz-progress-bar',
+      '-moz-range-progress',
+      '-moz-range-thumb',
+      '-moz-range-track',
+      '-ms-browse',
+      '-ms-check',
+      '-ms-clear',
+      '-ms-expand',
+      '-ms-fill',
+      '-ms-fill-lower',
+      '-ms-fill-upper',
+      '-ms-reveal',
+      '-ms-thumb',
+      '-ms-ticks-after',
+      '-ms-ticks-before',
+      '-ms-tooltip',
+      '-ms-track',
+      '-ms-value',
+      '-webkit-progress-bar',
+      '-webkit-progress-value',
+      '-webkit-slider-runnable-track',
+      '-webkit-slider-thumb',
+      'after',
+      'backdrop',
+      'before',
+      'cue',
+      'first-letter',
+      'first-line',
+      'grammar-error',
+      'placeholder',
+      'selection',
+      'spelling-error',
+    ];
+
     _.each(config('theme.pseudo', defaultPseudoTheme), (modifier, selector) => {
       addVariant(selector, ({ modifySelectors, separator }) => {
         modifySelectors(({ className }) => {
-          return `.${e(`${selector}${separator}${className}`)}${modifier == 'before' || modifier == 'after' ? '::' : ':'}${modifier}`;
+          return `.${e(`${selector}${separator}${className}`)}${psuedoElements.includes(modifier) ? '::' : ':'}${modifier}`;
         });
       });
     });
