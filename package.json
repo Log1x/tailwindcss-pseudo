@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-pseudo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tailwind CSS plugin to generate pseudo selector variants.",
   "author": "Brandon Nifong <brandon@tendency.me>",
   "license": "MIT",
