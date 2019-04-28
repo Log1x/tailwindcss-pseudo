@@ -40,7 +40,7 @@ This plugin generates the following utilities:
   background-color: black;
 }
 
-.bg-black:not(:first-child) {
+.not-first\:bg-black:not(:first-child) {
   background-color: black;
 }
 
@@ -48,11 +48,11 @@ This plugin generates the following utilities:
   content: '';
 }
 
-.empty::before {
+.before\:empty::before {
   content: '';
 }
 
-.empty::after {
+.after\:empty::after {
   content: '';
 }
 ```
