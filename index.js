@@ -13,7 +13,7 @@ module.exports = function(options = {}) {
       'after': 'after',
     };
 
-    const psuedoElements = [
+    const pseudoElements = [
       '-moz-progress-bar',
       '-moz-range-progress',
       '-moz-range-thumb',
@@ -51,7 +51,7 @@ module.exports = function(options = {}) {
     _.each(config('theme.pseudo', defaultPseudoTheme), (modifier, selector) => {
       addVariant(selector, ({ modifySelectors, separator }) => {
         modifySelectors(({ className }) => {
-          return `.${e(`${selector}${separator}${className}`)}${psuedoElements.includes(modifier) ? '::' : ':'}${modifier}`;
+          return `.${e(`${selector}${separator}${className}`)}${pseudoElements.includes(modifier) ? '::' : ':'}${modifier}`;
         });
       });
     });
