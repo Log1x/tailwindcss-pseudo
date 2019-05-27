@@ -17,10 +17,9 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "jest": "^24.7.1",
-    "jest-matcher-css": "^1.0.3",
-    "postcss": "^7.0.14",
-    "release-it": "^10.4.0",
-    "tailwindcss": "^1.0.0-beta.8"
+    "jest": "^24.8.0",
+    "jest-matcher-css": "^1.1.0",
+    "postcss": "^7.0.16",
+    "tailwindcss": "^1.0.2"
   }
 }
