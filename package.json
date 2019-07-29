@@ -14,12 +14,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "jest": "^24.8.0",
     "jest-matcher-css": "^1.1.0",
-    "postcss": "^7.0.16",
-    "tailwindcss": "^1.0.2"
+    "postcss": "^7.0.17",
+    "tailwindcss": "^1.0.5"
   }
 }
